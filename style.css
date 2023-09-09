@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&family=Pacifico&family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header {
+    display: flex;
+    background-color: rgba(223, 185, 156, 1);
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: white;
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+
+nav {
+    display: flex;
+}
+
+body{
+    background-color: AntiqueWhite;
+}
+
+#Esenin{
+    width: 111px;
+    height: 114px;
+    margin-right: 20px;
+    /* bottom: 10px;
+    left: 450px; */
+}
+
+#Tutchev{
+    width: 125px;
+    height: 125px;
+    margin-right: 20px;
+    /* bottom: 10px;
+    right: 140px; */
+}
+
+#Mixalkov{
+    width: 138px;
+    height: 106px;
+    margin-right: 20px;
+    /* left: 400px;
+    bottom: 160px; */
+}
+
+#Pushkin{
+    width: 136px;
+    height: 127px;
+    margin-right: 20px;
+    /* right: 650px;
+    bottom: 140px; */
+}
+
+.greeting {
+    padding: 10px 5%;
+    text-align: center;
+    background-color: rgba(215, 166, 131, 0.58);
+}
+
+.greeting>* {
+    vertical-align: middle;
+}
+
+.razryv {
+    background-color: AntiqueWhite;
+    height: 45px;
+}
+
+.top-poems {
+    background-color: rgba(204, 148, 108, 0.64);
+    padding: 10px 5%;
+    text-align: center;
+}
+
+.top-poems>* {
+    vertical-align: middle;
+}
+
+.Mixalkov-name, .Pushkin-name{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Mixalkov-poetry-name, .Pushkin-poetry-name{
+    font-size: 25px;
+    font-family: Lobster;
+}
+
+.Mixalkov-poem, .Pushkin-poem{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(215, 166, 131, 0.58);
+}
+
+.article>div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 745px;
+}
+
+.Tutchev-first-poetry-name,.Tutchev-second-poetry-name,.Tutchev-third-poetry-name,.Tutchev-fourth-poetry-name{
+    font-size: 23px;
+    font-family: Lobster;
+}
+
+.p1,.p2,.p3,.p4{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Pushkin-first-poetry-name,.Pushkin-second-poetry-name,.Pushkin-third-poetry-name,.Pushkin-fourth-poetry-name{
+    font-size: 23px;
+    font-family: Lobster;
+}
+
+.Pushkin-p1,.Pushkin-p2,.Pushkin-p3,.Pushkin-p4{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Mixalkov-first-poetry-name,.Mixalkov-second-poetry-name,.Mixalkov-third-poetry-name,.Mixalkov-fourth-poetry-name{
+    font-size: 23px;
+    font-family: Lobster;
+}
+
+.Mixalkov-p1,.Mixalkov-p2,.Mixalkov-p3,.Mixalkov-p4{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Esenin-first-poetry-name,.Esenin-second-poetry-name,.Esenin-third-poetry-name,.Esenin-fourth-poetry-name{
+    font-size: 23px;
+    font-family: Lobster;
+}
+
+.Esenin-p1,.Esenin-p2,.Esenin-p3,.Esenin-p4{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Farid-first-poetry-name,.Farid-second-poetry-name,.Farid-third-poetry-name{
+    font-size: 23px;
+    font-family: Lobster;
+}
+
+.Farid-p1,.Farid-p2,.Farid-p3{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+    color: white;
+    background-color: black;
+    padding: 12px 32px;
+    border-radius: 6px;
+    margin-top: 13px;
+}
+
+.footerNAV{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+}
