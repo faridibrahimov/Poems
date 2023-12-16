@@ -1,19 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&family=Pacifico&family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --header_bg-color: rgba(223, 185, 156, 1); 
+    --header_footer_a-color: white;
+    --header_footer_a-bg-color: black;
+    --body_bg-color: AntiqueWhite;
+    --footer_bg-color: AntiqueWhite;
+    --footer_p-color: black;
+    --razryv_bg-color: AntiqueWhite;
+    --top-poems-color: rgba(204, 148, 108, 0.64);
+    --article_greetings_bg-color: rgba(215, 166, 131, 0.58);
+    --main_h1_p-color: black;
+    --kartinka:url(images/sun.png);
+    /* --logo:url(images/pngtree-feather-pen-ink-and-ink-bottle-icon-illustration-isolated-vector-sign-png-image_1908569-removebg-preview\ 1.png); */
+}
+
+input{
+    display: none;
+}
+
+input:checked~*{
+    --header_bg-color: #2c221a;
+    --header_footer_a-color: black;
+    --header_footer_a-bg-color: white;
+    --body_bg-color: #6b5542;
+    --razryv_bg-color: #6b5542;
+    --top-poems-color: #3216B0;
+    --article_greetings_bg-color: #4b3b2a;
+    --main_h1_p-color: white;
+    --footer_bg-color: #2c221a;
+    --footer_p-color: white;
+    --kartinka:url(images/light-moon.png);
+    /* --logo:url(images/white-ink.png); */
+}
+
+.light-dark{
+    width: 50px;
+    height: 50px;
+    background-image: var(--kartinka);
+    background-size: contain;
+}
+
 header {
     display: flex;
-    background-color: rgba(223, 185, 156, 1);
+    background-color: var(--header_bg-color);
     align-items: center;
     justify-content: space-around;
+    /* border-radius: 15px; */
 }
 
 header a {
     text-decoration: none;
     margin: 0 20px;
-    color: white;
-    background-color: black;
+    color: var(--header_footer_a-color);
+    background-color: var(--header_footer_a-bg-color);
     padding: 12px 24px;
     border-radius: 6px;
+}
+
+footer{
+    background-color: var(--footer_bg-color);
+    /* border-radius: 15px; */
+}
+
+footer p{
+    color: var(--footer_p-color);
 }
 
 nav {
@@ -21,7 +72,11 @@ nav {
 }
 
 body{
-    background-color: AntiqueWhite;
+    background-color: var(--body_bg-color);
+}
+
+main p,h1,h2{
+    color: var(--main_h1_p-color);
 }
 
 #Esenin{
@@ -59,7 +114,8 @@ body{
 .greeting {
     padding: 10px 5%;
     text-align: center;
-    background-color: rgba(215, 166, 131, 0.58);
+    background-color: var(--article_greetings_bg-color);
+    /* border-radius: 15px; */
 }
 
 .greeting>* {
@@ -67,12 +123,13 @@ body{
 }
 
 .razryv {
-    background-color: AntiqueWhite;
+    background-color: var(--razryv_bg-color);
     height: 45px;
+    /* border-radius: 15px; */
 }
 
 .top-poems {
-    background-color: rgba(204, 148, 108, 0.64);
+    background-color: var(--top-poems-color);
     padding: 10px 5%;
     text-align: center;
 }
@@ -100,7 +157,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(215, 166, 131, 0.58);
+    background-color: var(--article_greetings_bg-color);
+    /* border-radius: 15px; */
 }
 
 .article>div {
@@ -175,10 +233,9 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: black;
     margin: 0 20px;
-    color: white;
-    background-color: black;
+    color: var(--header_footer_a-color);
+    background-color: var(--header_footer_a-bg-color);
     padding: 12px 32px;
     border-radius: 6px;
     margin-top: 13px;
@@ -188,4 +245,135 @@ footer a {
     display: flex;
     text-align: center;
     font-weight: bold;
+}
+
+/* планшеты горизонтально */
+@media (min-width: 992px) and (max-width: 1199px) {
+    header {
+        flex-direction: row; /* Возвращаем направление flex обратно в горизонтальное */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    header a {
+        margin: 0 10px;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer a {
+        margin: 0 10px;
+    }
+
+    .article > div {
+        gap: 50px; /* Возвращаем отступ между элементами внутри .article > div обратно */
+    }
+
+    .light-dark {
+        order: 1; /* Устанавливаем порядок .light-dark на новую строку */
+    }
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* body {
+        width: auto;
+    } */
+
+    header {
+        flex-direction: column; /* Изменяем направление flex для header */
+        align-items: center; /* Выравниваем элементы по центру */
+    }
+
+    header a {
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column; /* Изменяем направление flex для footer */
+        align-items: center; /* Выравниваем элементы по центру */
+    }
+
+    footer a {
+        margin: 10px 0;
+    }
+
+    .article > div {
+        gap: 20px; /* Уменьшаем отступ между элементами внутри .article > div */
+    }
+}
+
+/* телефоны горизонтально */
+@media (max-width: 767px){
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header a {
+        margin: 0 20px;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer a {
+        margin: 0 20px;
+    }
+
+    .article > div {
+        gap: 50px;
+    }
+
+    .light-dark {
+        width: 50px;
+        height: 50px;
+    }
+
+    #Esenin, #Tutchev, #Mixalkov, #Pushkin {
+        margin-right: 20px;
+    }
+
+    .greeting,
+    .razryv,
+    .top-poems,
+    .article {
+        padding: 10px 5%;
+    }
+
+    .greeting>*,
+    .top-poems>* {
+        margin-bottom: 10px;
+    }
+
+    .footerNAV {
+        font-size: 16px;
+    }
+
+    footer a {
+        padding: 12px 32px;
+        margin-top: 13px;
+    }
+
+    .footerP {
+        margin-top: 0;
+    }
+
+    #Esenin, #Tutchev, #Mixalkov, #Pushkin {
+        margin-right: 20px;
+    }
+
+    .light-dark {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* телефоны вертикально */
+@media (max-width: 480px) {
 }
