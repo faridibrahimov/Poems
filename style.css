@@ -138,20 +138,25 @@ main p,h1,h2{
     vertical-align: middle;
 }
 
-.Mixalkov-name, .Pushkin-name{
+.Mixalkov-name, .Pushkin-name, .Lermontov-name{
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.Mixalkov-poetry-name, .Pushkin-poetry-name{
+.Mixalkov-poetry-name, .Pushkin-poetry-name, .Lermontov-poetry-name{
     font-size: 25px;
     font-family: Lobster;
 }
 
-.Mixalkov-poem, .Pushkin-poem{
+.Mixalkov-poem, .Pushkin-poem, .Lermontov-poem{
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#top-Lermontov{
+    border-radius: 25px;
+}
+
 
 .article {
     display: flex;
@@ -246,6 +251,24 @@ footer a {
     text-align: center;
     font-weight: bold;
 }
+
+.slick-slider{
+    display: flex !important;
+    align-items: center;
+}
+
+.carousel__item{
+    display: flex !important;
+    flex-direction: column;
+    /* margin-right: 115px; */
+    align-items: center;
+}
+
+/* img {
+    width: 25%;
+    object-fit: contain;
+} */
+
 
 /* планшеты горизонтально */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -376,4 +399,54 @@ footer a {
 
 /* телефоны вертикально */
 @media (max-width: 480px) {
+    header a {
+        margin: 10px 0;
+        padding: 8px 14px; /* Уменьшаем отступы сверху и снизу еще больше */
+        font-size: 12px; /* Еще больше уменьшаем размер шрифта */
+    }
+
+    footer a {
+        margin: 10px 0;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .article > div {
+        gap: 10px; /* Уменьшаем отступ между элементами внутри .article > div */
+    }
+
+    .light-dark {
+        width: 30px; /* Уменьшаем размер иконки света/темноты */
+        height: 30px;
+    }
+
+    #Esenin, #Tutchev, #Mixalkov, #Pushkin {
+        margin-right: 0; /* Убираем отступ справа для изображений */
+        margin-bottom: 10px; /* Добавляем отступ снизу для изображений */
+    }
+
+    .greeting,
+    .razryv,
+    .top-poems,
+    .article {
+        padding: 10px 5%;
+    }
+
+    .greeting>*,
+    .top-poems>* {
+        margin-bottom: 8px; /* Уменьшаем отступы между элементами */
+    }
+
+    .footerNAV {
+        font-size: 14px; /* Уменьшаем размер шрифта в навигации футера */
+    }
+
+    footer a {
+        padding: 8px 20px; /* Уменьшаем отступы слева и справа для ссылок в футере */
+        margin-top: 10px;
+    }
+
+    .footerP {
+        margin-top: 0;
+    }
 }
