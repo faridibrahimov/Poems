@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стихотворения</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style copy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
 
@@ -43,8 +46,8 @@
 
         <article id="top-poetries" class="top-poems article">
             <h1>СТИХИ НЕДЕЛИ</h1>
-            <div>
-                <div class="Mixalkov-top-poem">
+            <div class="carousel">
+                <div class="Mixalkov-top-poem carousel__item">
                     <p class="Mixalkov-name">Сергей Михалков</p>
                     <img src="images/image 3.png" alt=" Фотография Сергея Михалкова" id="top-Mixalkov" width="198px" height="176px">
                     <p class="Mixalkov-poetry-name">Кошки-Мышки</p>
@@ -65,7 +68,7 @@
                         У мышек не отнять!</p>
                 </div>
 
-                <div class="Pushkin-top-poem">
+                <div class="Pushkin-top-poem carousel__item">
                     <p class="Pushkin-name">А.С. Пушкин</p>
                     <img src="images/Rectangle 2.png" alt="Фотография А.С. Пушкина" id="top-Pushkin" width="206px" height="176px">
                     <p class="Pushkin-poetry-name">Если жизнь тебя обманет...</p>
@@ -80,9 +83,26 @@
                         Всё мгновенно, всё пройдет;<br>
                         Что пройдет, то будет мило.</p>
                 </div>
+
+                <div class="Lermontov-top-poem carousel__item">
+                    <p class="Lermontov-name">М.Ю. Лермонтов</p>
+                    <img src="images/Лермонтов.jpeg" alt="" id="top-Lermontov" width="186px" height="186px">
+                    <p class="Lermontov-poetry-name">Утес</p>
+                    <p class="Lermontov-poem">
+                        Ночевала тучка золотая<br>
+                        На груди утеса-великана;<br>
+                        Утром в путь она умчалась рано,<br>
+                        По лазури весело играя;<br><br>
+
+                        Но остался влажный след в морщине<br>
+                        Старого утеса. Одиноко<br>
+                        Он стоит, задумался глубоко,<br>
+                        И тихонько плачет он в пустыне.
+                    </p>
+                </div>
             </div>
         </article>
-
+        
         <div class="razryv"></div>
 
         <article id="Tutchev-main-page" class="article">
@@ -638,5 +658,6 @@
             <p class="footerP">Copyright © 2023 Farid</p>
         </div>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
